@@ -1,4 +1,6 @@
-# Sony_SLink - Arduino SONY S-LINK/Control-A1 Protocol Library.
+# Sony_SLink
+
+**Arduino SONY S-LINK/Control-A1 Protocol Library.**
 
 This library allows to drive Sony audio consumer devices connected through the
 Sony S-Link bus-system.
