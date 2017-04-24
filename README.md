@@ -44,7 +44,7 @@ void loop() {
 }
 ```
 
-Check the *examples* directory for further exaples.
+Check the *examples* directory for further examples.
 
 # Description of the functions
 
