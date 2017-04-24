@@ -25,6 +25,8 @@ To use the library in your own sketch, select it from *Sketch > Import Library*.
 
 # Example
 
+Simplest example of using this library:
+
 ```
 #define SLINK_PIN 2 // S-Link Control-A1 pin
 
@@ -39,6 +41,8 @@ void setup() {
 void loop() {
 }
 ```
+
+Check the *examples* directory for further exaples.
 
 # Description of the functions
 
