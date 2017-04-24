@@ -1,0 +1,17 @@
+{
+  "name": "Sony_SLink",
+  "keywords": "SONY, S-LINK, Control-A1",
+  "description": "Arduino SONY S-LINK/Control-A1 Protocol Library",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/Ircama/Sony_SLink.git"
+  },
+  "version": "1.0.0",
+  "authors": {
+    "name": "Ircama",
+    "url": "https://github.com/Ircama"
+  },
+  "frameworks": "arduino",
+  "platforms": "*"
+}
