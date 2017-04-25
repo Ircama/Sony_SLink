@@ -80,7 +80,7 @@ slink.inputMonitor(0, true); // measure timing of idle periods (e.g., delimiter;
 
 # Notes
 
-  Code heavily based on
+  Code heavily based on:
   - hajdbo's code:
     https://github.com/hajdbo/sony-jukebox-slink/blob/master/jukebox.pde
   - EdsterG's code:
