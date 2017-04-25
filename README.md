@@ -12,9 +12,16 @@ and dump received sequences.
 https://creativecommons.org/licenses/by-sa/4.0/
 
 In standard operation, the code is targeted to the ATtiny85 microcontroller (e.g.
-Digispark Digistump ATtiny85). As the ATtiny85 USB interface does not allow confortable
+Digispark ATtiny85). As the ATtiny85 USB interface does not allow confortable
 monitoring and debugging features, dumping the S-Link interface can be achieved through
 an ATmega328P micro (e.g., Arduino Nano).
+
+Examples of sketches using this library:
+
+- https://github.com/Ircama/AtTinyTestIR
+- https://github.com/Ircama/IR2SLink
+
+For Digispark ATTINY85 check also this note: https://gist.github.com/Ircama/22707e938e9c8f169d9fe187797a2a2c
 
 -------------------------------------------------------------------------------------------------------------------
 
