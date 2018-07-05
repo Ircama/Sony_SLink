@@ -55,9 +55,9 @@ Check the *examples* directory for further examples.
 
 # Description of the functions
 
-slink.init(slinkPin) - set-up S-Link pin
+`slink.init(slinkPin)` - set-up S-Link pin
 
-slink.sendCommand(device, command) - send a command to the device; check Sony_SLink.h for available commands
+`slink.sendCommand(device, command)` - send a command to the device; check [Sony_SLink.h](https://github.com/Ircama/Sony_SLink/blob/master/Sony_SLink.h) for available commands
 
 Examples:
 ```
@@ -76,7 +76,7 @@ slink.sendCommand(SLINK_DEVICE_TUNER, SLINK_CMD_TUNER_PRESET_DOWN);
 slink.sendCommand(SLINK_DEVICE_TUNER, SLINK_CMD_TUNER_PRESET_STATION, 1, 1);
 ```
 
-slink.inputMonitor - monitor SLink input
+`slink.inputMonitor` - monitor SLink input
 Available options:
 ```
 slink.inputMonitor(0); // measure timing of mark periods in microseconds (sync should be 2400, one about 1200, zero ab. 600)
