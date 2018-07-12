@@ -36,7 +36,7 @@ To use the library in your own sketch, select it from *Sketch > Import Library*.
 
 Simplest example of using this library:
 
-```
+```c++
 #define SLINK_PIN 2 // S-Link Control-A1 pin
 
 #include "Sony_SLink.h"
@@ -60,7 +60,7 @@ Check the *examples* directory for further examples.
 `slink.sendCommand(device, command)` - send a command to the device; check [Sony_SLink.h](https://github.com/Ircama/Sony_SLink/blob/master/Sony_SLink.h) for available commands
 
 Examples:
-```
+```c++
 slink.sendCommand(SLINK_DEVICE_AMP, SLINK_CMD_AMP_VOLUME_UP);
 slink.sendCommand(SLINK_DEVICE_AMP, SLINK_CMD_AMP_VOLUME_DOWN);
 slink.sendCommand(SLINK_DEVICE_AMP, SLINK_CMD_AMP_POWER_OFF);
@@ -78,11 +78,24 @@ slink.sendCommand(SLINK_DEVICE_TUNER, SLINK_CMD_TUNER_PRESET_STATION, 1, 1);
 
 `slink.inputMonitor` - monitor SLink input
 Available options:
-```
+```c++
 slink.inputMonitor(0); // measure timing of mark periods in microseconds (sync should be 2400, one about 1200, zero ab. 600)
 slink.inputMonitor(1); // monitor bytes displaying binary and HEX format of each byte
 slink.inputMonitor(2); // monitor bytes displaying HEX dump
 slink.inputMonitor(0, true); // measure timing of idle periods (e.g., delimiter; all idle periods should be about 600 microseconds)
+```
+
+# Interfacing STR-DA1000ES
+
+The STR-DA1000ES receiver (3V TTL, 112 AMP device ID) needs some amount of wait time between the volume up and down codes (20 and 21) to actually change the volume. From some experimentation, timing seems to be between 3ms and 1960ms. Any shorter or longer and the volume won't change.
+
+Example:
+
+```c++
+void loop() {
+slink.sendCommand(112, 20);
+delay(3); //up to delay(1960);
+}
 ```
 
 # Notes
