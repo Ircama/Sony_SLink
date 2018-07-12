@@ -20,10 +20,11 @@
 
 // Ref. http://boehmel.de/slink.htm
 
-#define SLINK_DEVICE_MD         0xB0 // MD Send Commands (to MD recorder) prefix 10110000b = B0h
+#define SLINK_DEVICE_MD          176 // MD Send Commands (to MD recorder) prefix 10110000b = B0h
 #define SLINK_DEVICE_AMP         192 // AMP Send Commands (to amplifier) 11000000b=C0h - Send commands to a Sony STR-DA50ES receiver/amplifier
 #define SLINK_DEVICE_TUNER       193 // TUNER Send Commands (to tuner) 11000001b=C1h
 #define SLINK_DEVICE_SURROUND    194 // SUR Send Commands (to surround) prefix 11000011b = C3h
+#define SLINK_DEVICE_AMP_NEW     112 // AMP Send Commands (to new models of amplifier like STR-DA1000ES) 01110000b=70h
 #define SLINK_DEVICE_CDP_CX1L   0x90 // Send commands to a Sony CDP-CX jukebox for CD Player 1 to drive number <=200
 #define SLINK_DEVICE_CDP_CX1H   0x93 // Send commands to a Sony CDP-CX jukebox for CD Player 1 to drive disc number > 200
 #define SLINK_DEVICE_CDP_CX2L   0x91 // Send commands to a Sony CDP-CX jukebox for CD Player 2 to drive number <=200
